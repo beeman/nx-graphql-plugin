@@ -2,6 +2,19 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type HelloEntity {
+  message: String!
+  name: String
+}
+
 type Query {
   uptime: Float!
+}
+
+type Mutation {
+  hello(input: HelloWorldInput!): HelloEntity!
+}
+
+input HelloWorldInput {
+  name: String
 }
